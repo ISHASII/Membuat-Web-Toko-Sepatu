@@ -1,0 +1,127 @@
+.navbar-brand img {
+  height: 40px;
+}
+.navbar-nav .nav-link {
+  color: #fff; /* Warna teks */
+}
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+/* Warna teks dan ikon */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  color: #000 !important; /* Warna teks aktif dan saat dihover */
+}
+.navbar-nav .nav-link .fas.fa-heart,
+.navbar-nav .nav-link .fas.fa-shopping-cart {
+  color: #fff; /* Warna ikon */
+}
+.navbar-nav .nav-link .fas.fa-heart:hover,
+.navbar-nav .nav-link .fas.fa-shopping-cart:hover {
+  color: #000; /* Warna ikon saat dihover */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: blue; /* Sesuaikan warna dengan yang Anda inginkan */
+}
+
+/* Shoping Cart */
+.shopping-cart {
+  max-height: 300px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  height: 100vh;
+  width: 35rem;
+  padding: 0 1.5rem;
+  background-color: #fff;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.shopping-cart .cart-item {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #000;
+}
+.shopping-cart h3 {
+  font-size: 20px;
+  padding-bottom: 0.5rem;
+}
+.shopping-cart .item-price {
+  font-size: 16px;
+}
+
+.shopping-cart img {
+  height: 6rem;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.shopping-cart.active {
+  right: 0;
+}
+
+.btn-pay-now {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fa-trash-can {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.total-price {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#contact-toko {
+  padding-top: 20px;
+}
+#judul {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 3s steps(30) infinite, blink-caret 0.5s step-end infinite;
+  -webkit-animation: typing 3s steps(30) infinite, blink-caret 0.5s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255); /* Warna 'caret' simulasi pengetikan */
+  }
+}
